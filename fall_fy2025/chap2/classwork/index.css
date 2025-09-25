@@ -12,6 +12,7 @@ body {
   background: url('https://wallpaperbat.com/img/8643622-plaid-pattern-wallpaper.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color: transparent;
+  color: #000; /* Default text color set to black */
 }
 
 main {
@@ -45,6 +46,7 @@ footer {
 
 .footer-col h4 {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .footer-col a {
@@ -79,7 +81,7 @@ footer {
   display: inline-block;
 }
 
-/* Force all text to white */
+/* Remove forced white text */
 body, h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, div {
-  color: #fff !important;
+  color: #000 !important; /* Set all text to black */
 }
