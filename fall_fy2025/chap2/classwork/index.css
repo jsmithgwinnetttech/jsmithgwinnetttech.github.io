@@ -118,7 +118,7 @@ footer {
   display: inline-block;
 }
 
-/* Force all text to black EXCEPT inside nav and footer */
+/* Apply black text to everything except nav and footer */
 body *:not(header):not(header *):not(footer):not(footer *) {
   color: #000 !important;
 }
