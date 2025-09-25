@@ -1,21 +1,31 @@
-body {
-  background-color: #ff6EC7; /* Light pink */
-  font-family: 'Playfair Display', serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  color: #fff; /* Makes all text white */
 }
 
-h1, h2, h3 {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Playfair Display', serif;
+  color: #fff;
+  /* Background image settings */
+  background: url('https://wallpaperbat.com/img/8643622-plaid-pattern-wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-p {
+main {
+  flex: 1;
 }
 
 /* Force ALL text everywhere to be white */
 body, h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, div {
   color: #fff !important;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 /* Footer */
@@ -24,19 +34,23 @@ footer {
   color: #fff;
   padding: 40px 20px;
 }
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
+
 .footer-col {
   flex: 1;
   min-width: 150px;
 }
+
 .footer-col h4 {
   margin-bottom: 10px;
 }
+
 .footer-col a {
   color: #ccc;
   text-decoration: none;
@@ -44,18 +58,22 @@ footer {
   margin-bottom: 5px;
   transition: color 0.3s ease;
 }
+
 .footer-col a:hover {
   color: #fff;
 }
+
 .footer-col a i {
   font-size: 20px;
   margin-right: 10px;
   color: #ccc;
   transition: color 0.3s ease;
 }
+
 .footer-col a i:hover {
   color: #fff;
 }
+
 .social_icon {
   text-align: center;
   padding: 20px;
