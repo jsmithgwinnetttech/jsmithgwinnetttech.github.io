@@ -18,6 +18,17 @@ body {
 main {
   flex: 1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Horizontally center content */
+  text-align: center;      /* Center text inside sections */
+}
+
+main section {
+  max-width: 800px;
+  width: 100%;
+}
+
 }
 
 /* Footer: sticky, full width, reduced height */
