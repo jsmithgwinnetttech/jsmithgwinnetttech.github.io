@@ -1,3 +1,4 @@
+/* Reset and base layout */
 html, body {
   height: 100%;
   margin: 0;
@@ -5,47 +6,74 @@ html, body {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: 'Playfair Display', serif;
-  color: #fff;
-  /* Background image settings */
   background: url('https://wallpaperbat.com/img/8643622-plaid-pattern-wallpaper.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-color: transparent;
+  color: #000; /* Default text color */
 }
 
+/* Top Navigation Bar */
+.top-nav {
+  width: 100%;
+  background-color: #000; /* Solid black */
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-container a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-container a:hover {
+  color: #ccc;
+}
+
+/* Main content centered */
 main {
   flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Text should be Black */
-body, h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, div {
-  color: #000
+main section {
+  max-width: 800px;
+  width: 100%;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Footer */
-footer,
-footer *,
-.footer-col a,
-.footer-col a i {
-  color: #fff !important; /* Make all footer text and icons white */
-}
-
+/* Footer: sticky, full width, solid black */
 footer {
-  background-color: #222;
-  padding: 40px 20px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #000; /* Solid black */
+  color: #fff;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
+/* Footer layout */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer-col {
@@ -55,9 +83,11 @@ footer {
 
 .footer-col h4 {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .footer-col a {
+  color: #ccc;
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
@@ -71,6 +101,7 @@ footer {
 .footer-col a i {
   font-size: 20px;
   margin-right: 10px;
+  color: #ccc;
   transition: color 0.3s ease;
 }
 
@@ -80,15 +111,14 @@ footer {
 
 .social_icon {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
+
 .social_icon span a {
   display: inline-block;
 }
 
-/* Navigation: Make all text and links white */
-nav,
-nav *,
-nav a {
-  color: #fff !important;
+/* Apply black text to everything except nav and footer */
+body *:not(header):not(header *):not(footer):not(footer *) {
+  color: #000 !important;
 }
