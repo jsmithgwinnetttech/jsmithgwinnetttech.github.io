@@ -5,6 +5,7 @@ html, body {
   padding: 0;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -49,10 +50,10 @@ main {
   text-align: center;
 }
 
-main section {
-  max-width: 800px;
-  width: 100%;
-}
+
+.about{height: 75vh;}
+.contact{height: 75vh; background-color: black; width: 100vw; color: pink;}
+
 
 /* Footer: sticky, full width, solid black */
 footer {
@@ -113,9 +114,4 @@ footer {
 
 .social_icon span a {
   display: inline-block;
-}
-
-/* Apply black text to everything except nav and footer */
-body *:not(header):not(header *):not(footer):not(footer *) {
-  color: #000 !important;
 }
