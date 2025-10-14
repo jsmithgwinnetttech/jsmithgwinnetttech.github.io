@@ -54,6 +54,19 @@ main {
 .about{height: 75vh;}
 .contact{height: 75vh; background-color: black; width: 100vw; color: pink;}
 
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  gap: 20px; /* Adds a gap between the columns */
+}
+
+.column1,
+.column2 {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+
 
 /* Footer: sticky, full width, solid black */
 footer {
@@ -115,3 +128,4 @@ footer {
 .social_icon span a {
   display: inline-block;
 }
+
