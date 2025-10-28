@@ -178,3 +178,24 @@ footer {
 .dropdown-content a:hover {
   background: #f4f4f4;
 }
+.photo-wrapper { text-align: center; }
+.profile-photo {
+  width: 100%;
+  max-width: 360px;   /* prevents the photo from getting larger than needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.photo-credit {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #666;
+  text-align: center;
+}
+
+/* small-screen tweaks */
+@media (max-width: 600px) {
+  .profile-photo { max-width: 80vw; }
+}
