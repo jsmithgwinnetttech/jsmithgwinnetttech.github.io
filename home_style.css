@@ -154,3 +154,38 @@ footer {
 .nav-container a:hover {
   color: #ccc;
 }
+ 
+.nav-menu { display: flex; gap: 1rem; align-items: center; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;  
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f4f4f4;
+}
