@@ -9,10 +9,10 @@
 
   <h2>HTML Audio Example!!!</h2>
 
-  <audio controls>
-    <source src="" type="audio/mpeg">
-    <source src="audio-file.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
+  <audio>
+    <source src="piano.ogg" type="audio/mpeg">
+    <source src="piano.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
   </audio>
 
 </body>
